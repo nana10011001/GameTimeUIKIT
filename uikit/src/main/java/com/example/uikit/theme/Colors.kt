@@ -11,8 +11,8 @@ import androidx.compose.ui.graphics.Color
 
 val Accent = Color(0xFF2074F2)
 val AccentInactive = Color(0xFFC5D2FF)
-val Black = Color(0xFF2D2C2C)
-val White = Color(0xFFF7F7F7)
+val Black = Color(0xFF000000)
+val White = Color(0xFFFFFFFF)
 val Error = Color(0xFFFF4646)
 val Success = Color(0xFF00B412)
 val InputBG = Color(0xFFF7F7FA)
