@@ -42,7 +42,7 @@ import com.example.uikit.theme.Poppins
  * @param onDiscoverClick переход к экрану Discover
  * @param onChatClick переход к экрану Chat
  * @param onProfileClick переход к экрану Profile
- * @param onLandingClick переход к экрану Landing
+ * @param onScheduleClick переход к экрану Schedule
  * @param modifier модификатор панели
  */
 
@@ -53,7 +53,7 @@ fun BottomBar(
     onDiscoverClick: () -> Unit,
     onChatClick: () -> Unit,
     onProfileClick: () -> Unit,
-    onLandingClick: () -> Unit,
+    onScheduleClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Box(
@@ -125,8 +125,8 @@ fun BottomBar(
                 )
                 .clickable(
                     onClick = {
-                        Log.i("BottomBar", "[BottomBar]: Навигация - Landing")
-                        onLandingClick()
+                        Log.i("BottomBar", "[BottomBar]: Навигация - Schedule")
+                        onScheduleClick()
                     }
                 )
         ) {
@@ -189,6 +189,6 @@ private fun BottomBarPreview() {
         onDiscoverClick = { },
         onChatClick = { },
         onProfileClick = { },
-        onLandingClick = { }
+        onScheduleClick = { }
     )
 }
