@@ -29,6 +29,7 @@ import com.example.uikit.R
 import com.example.uikit.theme.Pink1
 import com.example.uikit.theme.Pink2
 import com.example.uikit.theme.Poppins
+import com.example.uikit.theme.VerticalGradient
 
 /**
  * Карточка с текстом и изображением
@@ -54,15 +55,7 @@ fun Card(
         modifier = modifier
             .fillMaxWidth()
             .heightIn(169.dp)
-            .background(
-                brush = Brush.verticalGradient(
-                    colors = listOf(
-                        Pink1,
-                        Pink2
-                    )
-                ),
-                shape = RoundedCornerShape(10.dp)
-            )
+            .background(brush = VerticalGradient, shape = RoundedCornerShape(10.dp))
             .clickable {
                 Log.i("Card", "[Card]: Нажатие - $title")
                 onCLick()
